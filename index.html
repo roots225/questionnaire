@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8"><title>Formation Marketing Export – Questionnaires</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);--bg:#fbfaf6;--card:#fff;--tx:#1b2430;--mu:#5a6573;--ac:#0a6b46;--ac2:#e6f3ec;--on:#fff;--or:#f77f00;--or2:#fff1e0;--ord:#8a4b00;--bd:#e3e1da;--bad:#b3392b;--bad2:#fbe9e6}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12171c;--card:#1a2127;--tx:#e9edf1;--mu:#9ba7b3;--ac:#4cc79a;--ac2:#1c3a2e;--on:#0d1512;--or2:#3a2a14;--ord:#ffb35c;--bd:#2c363f;--bad:#ef8576;--bad2:#3a1f1b}}
+:root[data-theme="dark"]{--bg:#12171c;--card:#1a2127;--tx:#e9edf1;--mu:#9ba7b3;--ac:#4cc79a;--ac2:#1c3a2e;--on:#0d1512;--or2:#3a2a14;--ord:#ffb35c;--bd:#2c363f;--bad:#ef8576;--bad2:#3a1f1b}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 90px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Manrope,system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:720px;margin:0 auto;padding:0 16px 48px}
+main::before{content:"";display:block;height:6px;margin-bottom:18px;border-radius:0 0 6px 6px;background:linear-gradient(90deg,#f77f00 0 33.3%,#fff 33.3% 66.6%,#009e60 66.6%);box-shadow:inset 0 0 0 1px var(--bd)}
+h1{font-size:1.65rem;line-height:1.2;font-weight:800;letter-spacing:-.02em;margin:.3em 0 .35em}
+h2{font-size:1.05rem;font-weight:800;margin:1.5em 0 .6em}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:18px;margin:12px 0}
+.mu{color:var(--mu);font-size:.92rem}
+.lead{color:var(--mu);font-size:1.05rem;max-width:52ch;margin:0 0 20px}
+.grid{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}.chip{font-size:.82rem;font-weight:600;padding:3px 10px;border-radius:99px;background:var(--or2);color:var(--ord)}
+button,.btn{font:inherit;font-weight:600;background:var(--ac);color:var(--on);border:1px solid var(--ac);border-radius:10px;padding:11px 18px;min-height:44px;cursor:pointer}
+button.sec{background:transparent;color:var(--ac);border:1px solid var(--bd)}
+button.sec:hover{border-color:var(--ac)}
+.full{width:100%}
+.foot{margin-top:28px;text-align:center}.foot a{color:var(--mu);font-size:.88rem}
+:focus-visible{outline:3px solid var(--or);outline-offset:2px}
+input[type=text],select{font:inherit;width:100%;box-sizing:border-box;padding:11px 12px;min-height:46px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx)}
+select{width:auto;padding:8px 10px;min-height:44px}
+.f{display:block;font-weight:700;margin:0 0 14px}.f:last-child{margin:0}.f em{font-style:normal;font-weight:400;color:var(--mu);font-size:.85rem;margin-left:6px}.f input{margin-top:6px;font-weight:400}
+.pg{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding:10px 0 8px;margin:4px 0}
+.pgt{display:flex;justify-content:space-between;gap:10px;font-size:.88rem;color:var(--mu);margin-bottom:6px}.pgt b{color:var(--tx)}
+.bar{height:8px;border-radius:99px;background:var(--bd);overflow:hidden}.bar i{display:block;height:100%;width:0;background:var(--ac);border-radius:99px}
+.q.miss{border-color:var(--bad);background:var(--bad2)}
+.qh{display:flex;gap:12px;align-items:flex-start;margin-bottom:10px}.qh b{flex:1;line-height:1.4}
+.qn{flex:none;min-width:28px;height:28px;border-radius:8px;background:var(--ac2);color:var(--ac);font-weight:800;font-size:.9rem;display:grid;place-items:center}
+.pt{flex:none;font-size:.8rem;color:var(--mu)}
+label.o{position:relative;display:flex;gap:12px;align-items:center;padding:11px 12px;min-height:48px;border:1px solid var(--bd);border-radius:10px;margin:8px 0;cursor:pointer;background:var(--card)}
+label.o input{position:absolute;opacity:0;pointer-events:none}
+.lt{flex:none;width:28px;height:28px;border-radius:50%;border:1.5px solid var(--bd);display:grid;place-items:center;font-style:normal;font-weight:700;font-size:.85rem;color:var(--mu)}
+label.o:hover{border-color:var(--ac)}
+label.o:has(input:checked){background:var(--ac2);border-color:var(--ac);font-weight:600}
+label.o:has(input:checked) .lt{background:var(--ac);border-color:var(--ac);color:var(--on)}
+label.o:has(input:focus-visible){outline:3px solid var(--or);outline-offset:2px}
+.nv{position:sticky;bottom:env(safe-area-inset-bottom,0px);display:flex;gap:10px;padding:12px 0;background:var(--bg);border-top:1px solid var(--bd);margin-top:16px}.nv button{flex:1}
+.res{text-align:center;padding:28px 18px}.res .bar{max-width:320px;margin:0 auto 14px}
+.big{font-size:2.6rem;font-weight:800;line-height:1.1;color:var(--ac);font-variant-numeric:tabular-nums}.big small{font-size:1.1rem;font-weight:600;color:var(--mu)}
+.pill{display:inline-block;padding:3px 11px;border-radius:99px;font-size:.84rem;font-weight:700;white-space:nowrap}
+.pill.a{background:var(--ac2);color:var(--ac)}.pill.b,.pill.c{background:var(--or2);color:var(--ord)}.pill.d{background:var(--bad2);color:var(--bad)}
+.tw{overflow-x:auto;padding:6px 12px}table{border-collapse:collapse;width:100%;font-size:.92rem;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 8px;border-bottom:1px solid var(--bd);white-space:nowrap}th{font-size:.84rem;color:var(--mu);font-weight:700}
+tr:last-child td{border-bottom:0}
+.err{color:var(--bad);font-weight:600}nav{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}nav button{min-height:40px;padding:7px 14px;font-size:.92rem}
+input[type=number]{font:inherit;padding:7px;min-height:40px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx)}.num{width:80px}
+.row{display:flex;gap:10px;align-items:center;padding:8px 0;border-bottom:1px solid var(--bd)}.row span{flex:1}
+.qr{width:190px;max-width:100%;background:#fff;padding:8px;border-radius:10px;box-sizing:border-box}.qr svg{width:100%;height:auto;display:block}
+@media(prefers-reduced-motion:no-preference){label.o,.lt,.bar i{transition:background .15s,border-color .15s,width .3s}}
+.parts{text-align:left;max-width:420px;margin:20px auto 0}.sc{margin:12px 0}.res .parts .bar{max-width:none;margin:0}
+.row label.mu{display:flex;gap:8px;align-items:center}.row select{max-width:100%}
+.seg{display:flex;gap:6px;padding:4px;background:var(--bd);border-radius:12px;margin:16px 0}.seg button{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;background:transparent;color:var(--tx);border:0;min-height:52px;font-size:.9rem;line-height:1.25}.seg button.on{background:var(--card);color:var(--ac)}.seg small{font-weight:400;color:var(--mu);font-size:.8rem}
+.bq{padding:16px}.bqh{display:flex;gap:12px;align-items:flex-start}.bqh b{flex:1;line-height:1.4}.pts{flex:none;display:flex;flex-direction:column;align-items:center;gap:4px;font-size:.75rem;color:var(--mu)}.pts .num{width:72px;text-align:center}
+.chs{display:grid;gap:8px;margin-top:12px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.chs label.o{margin:0}
+.sb{position:sticky;bottom:env(safe-area-inset-bottom,0px);display:flex;gap:12px;align-items:center;justify-content:space-between;padding:12px 0;background:var(--bg);border-top:1px solid var(--bd);margin-top:16px}
+.sh{display:flex;justify-content:space-between;align-items:baseline;gap:12px;margin:28px 0 8px;padding-bottom:8px;border-bottom:2px solid var(--or)}.sh h2{margin:0;font-size:1.05rem}.sh .mu{white-space:nowrap}.jump{display:flex;gap:8px;flex-wrap:wrap;margin:4px 0}.jump button{min-height:38px;padding:5px 14px;font-size:.88rem}
+.lk{display:block;word-break:break-all;color:var(--ac);font-size:.9rem;font-weight:600;margin-bottom:12px}.act{display:flex;gap:8px;flex-wrap:wrap}a.btn{display:inline-flex;align-items:center;box-sizing:border-box;text-decoration:none}
+.det h3{font-size:.95rem;margin:18px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--or)}.da{display:flex;gap:12px;align-items:flex-start;padding:10px 12px;border-radius:10px;margin:6px 0;border:1px solid var(--bd);background:var(--card)}.da>div{flex:1;min-width:220px}.da.g{border-color:var(--ac)}.da.b{border-color:var(--bad);background:var(--bad2)}.ans{font-weight:600;margin-top:2px}.da.g .ans{color:var(--ac)}.da.b .ans{color:var(--bad)}
+.det{position:sticky;left:0;box-sizing:border-box;width:min(calc(100vw - 64px),680px)}
+.rep .det{position:static;width:auto}
+.swb{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin:0 0 14px}.sw{display:flex;gap:6px;align-items:center;flex:1;min-width:250px}.sw select{flex:1;width:100%;min-width:0}.sw button{padding:8px 14px}button:disabled{opacity:.4;cursor:default}
+.sm{margin-top:16px;padding-top:14px;border-top:1px solid var(--bd)}.sm p{margin:0 0 8px}.nums{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}.nb{min-width:40px;min-height:40px;padding:0 8px;border-radius:10px;font-weight:700}.nb.g{background:var(--ac2);color:var(--ac);border:1px solid var(--ac)}.nb.b{background:var(--bad2);color:var(--bad);border:1px solid var(--bad)}
+.nb.g.on{background:var(--ac);color:var(--on)}.nb.b.on{background:var(--bad);color:#fff}.qd .da{margin:8px 0}
+main.wide{max-width:1060px}.grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}.steps{list-style:none;display:flex;gap:8px 22px;flex-wrap:wrap;padding:0;margin:0 0 22px}.steps li{display:flex;gap:8px;align-items:center;font-size:.92rem;color:var(--mu)}.steps b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--or2);color:var(--ord);display:grid;place-items:center;font-size:.8rem}.tw tr+tr:hover td{background:var(--bg)}
+.chr{font-weight:700;font-variant-numeric:tabular-nums;color:var(--ord);background:var(--or2);padding:1px 10px;border-radius:99px;margin-right:10px}
+.pgt>span{white-space:nowrap;flex:none}.pgt>b{flex:1}
+.sx{position:relative;display:flex;align-items:center;justify-content:center;text-align:center;padding:8px 6px;min-height:44px;border:1px solid var(--bd);border-radius:10px;font-size:.86rem;line-height:1.25;cursor:pointer;background:var(--card)}
+.sx input{position:absolute;opacity:0;pointer-events:none}.sx:hover{border-color:var(--ac)}
+.sx:has(input:checked){background:var(--ac);border-color:var(--ac);color:var(--on);font-weight:700}
+.sx:has(input:focus-visible){outline:3px solid var(--or);outline-offset:2px}.sx.nc{color:var(--mu);border-style:dashed}
+.sxg{display:grid;gap:6px;grid-template-columns:repeat(auto-fit,minmax(105px,1fr))}.sxg.n11{grid-template-columns:repeat(auto-fit,minmax(48px,1fr))}
+.sg{margin:24px 0 6px;font-size:.8rem;font-weight:800;letter-spacing:.04em;text-transform:uppercase;color:var(--ord)}
+.q .qn{padding:0 6px}.f textarea{margin-top:6px;font-weight:400}
+textarea{font:inherit;width:100%;box-sizing:border-box;padding:11px 12px;min-height:90px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);resize:vertical}
+.bw{height:10px;border-radius:99px;background:var(--bd);overflow:hidden;min-width:90px}.bw i{display:block;height:100%;background:var(--ac)}
+.op{border-left:3px solid var(--or);padding:6px 12px;margin:8px 0;background:var(--card);border-radius:0 8px 8px 0}
+details.card summary{cursor:pointer}
+</style></head><body><main id="app"></main>
+<script type="text/plain" id="srvsrc">
+#!/usr/bin/env node
+/* Serveur autonome des questionnaires (Node >= 18, aucune dépendance).
+   Lancer :  ADMIN_PW="votre-mot-de-passe" PORT=3000 node server.js
+   Les données sont dans ./data/db.json (sauvegardez ce dossier). */
+const http=require("http"),fs=require("fs"),path=require("path"),crypto=require("crypto");
+const PORT=+process.env.PORT||3000,PW=process.env.ADMIN_PW||"admin2026",DIR=process.env.DATA_DIR||path.join(__dirname,"data"),FILE=path.join(DIR,"db.json"),TP=process.env.TRUST_PROXY==="1";
+fs.mkdirSync(DIR,{recursive:true});
+const COLS=["entree","sortie","satisfaction","config"],DEF={entree:"ABCDABCDABCDABCDABCD",sortie:"DCBADCBADCBADCBADCBA"};
+let db={},ver={};try{db=JSON.parse(fs.readFileSync(FILE,"utf8"))}catch(e){}
+COLS.forEach(c=>{db[c]=db[c]||{};ver[c]=Date.now()});
+let SECRET;const SF=path.join(DIR,"secret");try{SECRET=fs.readFileSync(SF,"utf8")}catch(e){SECRET=crypto.randomBytes(32).toString("hex");fs.writeFileSync(SF,SECRET,{mode:0o600})}
+const HM=e=>crypto.createHmac("sha256",SECRET).update(String(e)).digest("hex"),mk=()=>{const e=Date.now()+12*36e5;return e+"."+HM(e)},
+ isAdm=req=>{const [e,s]=(String(req.headers.authorization||"").replace(/^Bearer /,"")).split(".");if(!e||!s||+e<Date.now())return false;const x=HM(e);return s.length===x.length&&crypto.timingSafeEqual(Buffer.from(s),Buffer.from(x))};
+/* écriture disque atomique, groupée : plusieurs envois simultanés partagent une même écriture ;
+   la réponse HTTP n'est envoyée qu'une fois les données sur le disque */
+let waiters=[],busy=false;
+const persist=()=>new Promise((ok,ko)=>{waiters.push({ok,ko});if(!busy)flush()});
+async function flush(){busy=true;while(waiters.length){const w=waiters;waiters=[];try{const t=FILE+".tmp";await fs.promises.writeFile(t,JSON.stringify(db));await fs.promises.rename(t,FILE);w.forEach(x=>x.ok())}catch(e){console.error("persist",e);w.forEach(x=>x.ko(e))}}busy=false}
+const send=(res,code,o)=>{const s=typeof o==="string";res.writeHead(code,{"Content-Type":s?"text/html; charset=utf-8":"application/json","Cache-Control":"no-store","X-Content-Type-Options":"nosniff"});res.end(s?o:JSON.stringify(o))};
+const body=req=>new Promise((ok,ko)=>{let n=0;const a=[];req.on("data",d=>{n+=d.length;if(n>2e5){ko(new Error("big"));req.destroy()}else a.push(d)});req.on("end",()=>{try{ok(JSON.parse(Buffer.concat(a).toString()||"{}"))}catch(e){ko(e)}});req.on("error",ko)});
+const r2=x=>Math.round(x*100)/100,str=(v,n)=>typeof v==="string"?v.slice(0,n):"",int=v=>Number.isInteger(v)?v:null,
+ arr=(a,n,lo,hi)=>Array.isArray(a)&&a.length===n&&a.every(x=>x===null||(Number.isInteger(x)&&x>=lo&&x<=hi)),
+ list=(a,n,f)=>(Array.isArray(a)?a:[]).slice(0,n).map(f);
+function clean(c,b){
+ if(!b||typeof b!=="object"||b.type!==c||typeof b.date!=="string"||isNaN(Date.parse(b.date)))return null;
+ if(c==="satisfaction"){const ben=b.prof!==2;
+  if(!arr(b.g,4,0,5)||!arr(b.d,21,0,5)||!arr(b.t,4,1,3)||!Number.isInteger(b.s)||b.s<0||b.s>10||(ben&&(!arr(b.l,4,1,3)||!arr(b.r,8,1,4))))return null;
+  return{type:c,date:b.date,structure:str(b.structure,120),fonction:int(b.fonction),exp:int(b.exp),sexe:int(b.sexe),prof:ben?1:2,g:b.g,d:b.d,t:b.t,l:ben?b.l:[],r:ben?b.r:[],a:ben?list(b.a,2,x=>str(x,200)):[],b:ben?list(b.b,2,x=>int(x)).filter(x=>x!==null):[],bo:ben?str(b.bo,120):"",o:list(b.o,4,x=>str(x,600)),s:b.s}}
+ const nom=str(b.nom,120).trim();if(!nom||typeof b.reponses!=="string"||!/^[ABCD?]{20}$/.test(b.reponses))return null;
+ const cf=db.config.points||{},K=cf.key&&typeof cf.key[c]==="string"&&cf.key[c].length===20?cf.key[c]:DEF[c],P=Array.isArray(cf[c])&&cf[c].length===20?cf[c].map(Number):Array(20).fill(1);
+ return{type:c,nom,entreprise:str(b.entreprise,120),reponses:b.reponses,score:r2(P.reduce((s,p,i)=>s+(b.reponses[i]===K[i]?p:0),0)),max:r2(P.reduce((s,p)=>s+p,0)),date:b.date,duree:Number.isFinite(b.duree)?Math.max(0,Math.round(b.duree)):0}}
+const fails={};
+const srv=http.createServer(async(req,res)=>{try{
+ const u=new URL(req.url,"http://x"),p=u.pathname,ip=(TP&&req.headers["x-forwarded-for"]||"").split(",")[0].trim()||req.socket.remoteAddress;
+ if(req.method==="GET"&&(p==="/"||p==="/index.html"))return send(res,200,fs.readFileSync(path.join(__dirname,"index.html"),"utf8"));
+ if(p==="/api/ping")return send(res,200,{ok:true});
+ if(p==="/api/login"&&req.method==="POST"){const f=fails[ip]=(fails[ip]&&Date.now()-fails[ip].t<3e5)?fails[ip]:{n:0,t:Date.now()};
+  if(f.n>=8)return send(res,429,{error:"throttled"});const b=await body(req);
+  const a=crypto.createHash("sha256").update(String(b.pw||"")).digest(),w=crypto.createHash("sha256").update(PW).digest();
+  if(!crypto.timingSafeEqual(a,w)){f.n++;return send(res,401,{error:"bad password"})}f.n=0;return send(res,200,{token:mk()})}
+ let m=p.match(/^\/api\/c\/(\w+)(?:\/([\w-]{1,64}))?$/);
+ if(!m||!COLS.includes(m[1]))return send(res,404,{error:"not found"});const c=m[1],id=m[2];
+ if(req.method==="GET"&&!id){if(!isAdm(req))return send(res,401,{error:"auth"});const v=+u.searchParams.get("v")||0;return send(res,200,v===ver[c]?{v}:{v:ver[c],docs:db[c]})}
+ if(req.method==="GET"){if(c!=="config"&&!isAdm(req))return send(res,401,{error:"auth"});const d=db[c][id];return send(res,200,{exists:d!==undefined,data:d})}
+ if(req.method==="PUT"&&id){const b=await body(req);let rec;
+  if(c==="config"){if(!isAdm(req))return send(res,401,{error:"auth"});if(!["points","etat"].includes(id)||!b||typeof b!=="object")return send(res,400,{error:"invalid"});rec=b}
+  else{const e=db.config.etat;if(e&&e[c]===false)return send(res,403,{error:"closed"});rec=clean(c,b);if(!rec)return send(res,400,{error:"invalid"});
+   const old=db[c][id];if(old)return old.date===rec.date?send(res,200,{ok:true,dup:true}):send(res,409,{error:"exists"})}
+  db[c][id]=rec;ver[c]++;await persist();return send(res,200,{ok:true})}
+ send(res,405,{error:"method"})}catch(e){send(res,e.message==="big"?413:e instanceof SyntaxError?400:500,{error:"bad request"})}});
+srv.listen(PORT,()=>console.log("Questionnaires : http://localhost:"+PORT+(PW==="admin2026"?"  (ATTENTION : changez ADMIN_PW)":"")));
+process.on("SIGTERM",()=>{const w=()=>busy?setTimeout(w,50):process.exit(0);w()});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+<script>
+const Q={
+entree:{titre:"Questionnaire d’entrée de formation",sous:"Marketing et marketing international",
+sec:[[0,"A. Notions fondamentales de marketing"],[8,"B. Repères de marketing international"],[14,"C. Premiers repères sur la démarche export"]],
+q:[
+["Quel est l’objectif principal du marketing ?",["Comprendre les besoins des clients et proposer une offre adaptée","Produire le plus possible","Faire uniquement de la publicité","Réduire uniquement les coûts"]],
+["À quoi sert principalement une étude de marché ?",["À garantir les ventes","À comprendre la demande, les clients et la concurrence","À remplacer le plan financier","À fixer le salaire des commerciaux"]],
+["Que signifie segmenter un marché ?",["Fixer le prix de vente","Choisir un fournisseur","Diviser les clients en groupes ayant des besoins ou caractéristiques proches","Répartir les tâches entre salariés"]],
+["Après avoir segmenté le marché, le ciblage consiste à :",["Choisir un mode de transport","Modifier le nom de l’entreprise","Calculer le coût de production","Choisir les groupes de clients que l’entreprise veut servir"]],
+["Le positionnement désigne :",["La place que l’entreprise souhaite occuper dans l’esprit des clients par rapport aux offres concurrentes","L’adresse du siège social","L’emplacement des stocks","Le classement des salariés"]],
+["Laquelle de ces propositions est l’un des 4P du marketing-mix ?",["Personnel","Produit","Partenariat","Procédure"]],
+["Dans les 4P, « Place » renvoie principalement :",["À la publicité","Au lieu de fabrication seulement","À la distribution et à la disponibilité de l’offre","Au prix de vente"]],
+["Une proposition de valeur explique surtout :",["Les horaires de travail","L’organigramme de l’entreprise","Le montant du capital social","Le bénéfice apporté au client et la raison de choisir l’offre"]],
+["Le marketing international consiste à :",["Adapter les décisions marketing aux marchés étrangers visés","Appliquer toujours la même stratégie dans tous les pays","Vendre uniquement sur Internet","Remplacer le marketing par le transport"]],
+["Avant de choisir un pays cible, l’entreprise doit notamment examiner :",["Uniquement la distance géographique","La demande, la concurrence et les conditions d’accès au marché","Uniquement le nombre d’habitants","Seulement l’avis du dirigeant"]],
+["Quel facteur culturel peut influencer l’achat d’un produit à l’étranger ?",["La date de création du logo","Le nombre de machines dans l’usine ivoirienne","Les goûts, habitudes de consommation et pratiques locales","Le nombre de réunions internes"]],
+["Adapter une offre à un marché étranger peut nécessiter de modifier :",["Les horaires des bureaux en Côte d’Ivoire","Uniquement le nom du dirigeant","Le capital social","Le produit, le conditionnement ou l’étiquetage"]],
+["Une entreprise qui vend un produit identique sur plusieurs marchés applique plutôt une démarche :",["Standardisée","Sans ciblage","De diversification financière","De sous-traitance"]],
+["Une règle d’étiquetage propre au pays de destination est :",["Une préférence personnelle du dirigeant","Une exigence à vérifier avant la vente","Un coût fixe de production locale","Un indicateur de fidélité des clients"]],
+["Le diagnostic export sert principalement à :",["Garantir l’obtention d’une commande","Choisir immédiatement un transporteur","Évaluer les capacités de l’entreprise et repérer les points à renforcer","Fixer le taux de change"]],
+["Pourquoi vérifier la capacité de production avant de prospecter à l’étranger ?",["Pour éviter toute étude de marché","Pour déterminer la langue officielle du pays","Pour choisir un logo","Pour savoir si l’entreprise peut répondre aux volumes et délais demandés"]],
+["Quel rôle peut jouer un distributeur dans un marché étranger ?",["Acheter ou commercialiser les produits auprès de clients locaux, selon l’accord conclu","Délivrer automatiquement les certifications","Garantir les ventes sans contrat","Remplacer le fabricant dans le contrôle qualité"]],
+["Pour fixer un prix export, il faut notamment tenir compte :",["Uniquement du prix local","Des coûts, du transport, des conditions de vente et du marché","Uniquement du taux de change","Seulement du prix du concurrent le moins cher"]],
+["À quoi sert principalement un Business Plan Export ?",["À garantir le financement","À remplacer les ventes et la prospection","À présenter de façon cohérente le marché, la stratégie, les moyens et les prévisions du projet","À décrire uniquement le produit"]],
+["À quoi sert un indicateur commercial ?",["À choisir le nom de l’entreprise","À remplacer les objectifs de vente","À calculer uniquement les coûts de transport","À suivre l’avancement des actions et les résultats commerciaux"]]]},
+sortie:{titre:"Questionnaire de sortie de formation",sous:"Marketing Export et stratégies d’accès aux marchés",
+sec:[[0,"A. Diagnostic et choix du marché"],[5,"B. Cible, offre et stratégie commerciale"],[11,"C. Mise en œuvre, finances et Business Plan Export"]],
+q:[
+["Quel est l’objectif d’un diagnostic de préparation à l’export ?",["Remplacer l’étude de marché","Choisir un pays au hasard","Fixer le taux de change","Mesurer les capacités de l’entreprise et identifier les écarts à traiter"]],
+["Quel élément permet de vérifier si l’entreprise peut servir un marché export ?",["La taille du logo","Le nombre de publications sur les réseaux sociaux","La capacité à fournir les volumes et la qualité demandés dans les délais","Le nombre de réunions internes"]],
+["Pour comparer plusieurs marchés, l’entreprise devrait :",["Se fier uniquement à la proximité géographique","Utiliser des critères définis et comparer les résultats","Choisir le pays le plus peuplé","Retenir le premier prospect rencontré"]],
+["Lequel de ces éléments renseigne sur l’attractivité d’un marché ?",["La demande potentielle, la concurrence et les conditions d’accès","Le nombre de salariés de l’entreprise exportatrice","Le coût du mobilier du siège","L’ancienneté de la marque uniquement"]],
+["Pourquoi faut-il vérifier les informations utilisées pour choisir un marché ?",["Pour remplacer le ciblage des clients","Pour éviter de comparer les marchés","Pour augmenter automatiquement le chiffre d’affaires","Pour fonder la décision sur des données fiables et suffisamment récentes"]],
+["Après avoir retenu un marché, la segmentation aide l’entreprise à :",["Calculer les salaires","Choisir le montant de son capital","Repérer des groupes de clients aux besoins proches","Éviter d’étudier les concurrents"]],
+["Une proposition de valeur export doit préciser :",["Uniquement les coûts de production","Le bénéfice de l’offre pour le client visé et ce qui la distingue","Le nom de tous les concurrents","Les horaires de l’entreprise"]],
+["Pourquoi adapter le produit ou son emballage à un marché cible ?",["Pour répondre aux attentes des clients et aux exigences applicables","Pour éviter de définir un prix","Pour supprimer les frais de transport","Pour remplacer la prospection"]],
+["Le marketing-mix classique comprend :",["Plan, Projet, Priorité et Publicité","Production, Personnel, Profit et Partenaires","Pays, Prospects, Prix et Paiement","Produit, Prix, Place (distribution) et Promotion (communication)"]],
+["Une entreprise qui confie la revente de ses produits à un importateur-distributeur choisit :",["Une stratégie sans partenaire","Une implantation nécessairement en propre","Un intermédiaire local pour accéder aux clients du marché","Une vente directe aux consommateurs uniquement"]],
+["Avant d’engager du temps sur un prospect, il faut d’abord :",["Lui envoyer une facture définitive","Vérifier son activité, son besoin et son rôle dans l’achat","Lui accorder automatiquement l’exclusivité","Lui demander de choisir le pays cible"]],
+["Un plan d’action export utile précise :",["Les actions, les responsables, les échéances et les moyens nécessaires","Uniquement le nom du pays","Seulement les ventes déjà réalisées","Les objectifs sans les actions"]],
+["Pourquoi prévoir une période test sur un nouveau marché ?",["Pour se dispenser de vérifier les exigences","Pour éviter de recueillir des retours clients","Pour garantir la rentabilité dès le départ","Pour observer les réactions et ajuster l’offre ou l’organisation avant d’élargir le projet"]],
+["Une opération export doit être préparée en tenant compte notamment :",["Seulement du choix du logo","Uniquement de la publicité","Du transport, des documents, de l’assurance et des exigences applicables","Du nombre de réunions de l’équipe"]],
+["Une entreprise prévoit de vendre 25 tonnes à 7 000 FCFA le kilogramme. Quel chiffre d’affaires cela représente-t-il ?",["17 500 000 FCFA","175 000 000 FCFA","1 750 000 FCFA","700 000 000 FCFA"]],
+["Pour apprécier la rentabilité prévisionnelle, il faut comparer :",["Les recettes prévues aux coûts liés au projet","Le nombre de prospects à la taille du logo","Le nombre de salariés au nombre de pays","La distance aux horaires d’ouverture"]],
+["À quoi sert un plan de trésorerie prévisionnel ?",["À remplacer le plan de prospection","À choisir les segments de clientèle","À fixer le nom du produit","À anticiper les encaissements, les décaissements et les besoins de liquidités"]],
+["Quel est le rôle du Business Plan Export dans un projet ?",["Remplacer le suivi des résultats","Garantir automatiquement une commande","Relier l’analyse du marché aux choix commerciaux, aux opérations et aux prévisions financières","Présenter uniquement les caractéristiques du produit"]],
+["Quel indicateur peut aider à suivre la prospection export ?",["Le nombre de réunions internes sans lien avec le projet","Le nombre de prospects qualifiés contactés et les réponses obtenues","La taille du catalogue imprimé","Le nombre de salariés dans tous les pays"]],
+["Pourquoi préciser les hypothèses utilisées dans les prévisions financières ?",["Pour pouvoir vérifier leur cohérence avec le marché, les volumes et les moyens de l’entreprise","Pour éviter de suivre les résultats réels","Pour garantir que les ventes seront réalisées","Pour remplacer l’étude de marché"]]]}};
+const KEY={entree:"ABCDABCDABCDABCDABCD",sortie:"DCBADCBADCBADCBADCBA"};
+const PUB="https://claude.ai/artifact/WLAgtPGtLpRzHfbDsM24ZU";
+const LET="ABCD?",$=s=>document.querySelector(s),app=$("#app");
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=x=>String(Math.floor(x/60)).padStart(2,"0")+":"+String(x%60).padStart(2,"0"),fmtL=x=>Math.floor(x/60)+" min "+String(x%60).padStart(2,"0")+" s";
+const lv=(n,m=20)=>(n=m?n/m*20:0)>=16?"a":n>=11?"b":n>=6?"c":"d";
+const interp=(n,m=20)=>(n=m?n/m*20:0)>=16?"Acquis solides":n>=11?"Bases à consolider":n>=6?"Notions à reprendre":"Accompagnement renforcé recommandé";
+const FIREBASE_CONFIG=null; /* Pour une diffusion à grande échelle, collez ici la configuration Firebase : {apiKey:"…",authDomain:"…",projectId:"…",appId:"…"} */
+const STANDALONE=typeof claude==="undefined",FB=STANDALONE&&!!FIREBASE_CONFIG;
+const ADMIN_PW="admin2026"; /* CHANGEZ ce mot de passe avant diffusion */
+const LOCAL={use:async n=>({
+ db:()=>{const K=c=>"qf_"+c,rd=c=>{try{return JSON.parse(localStorage.getItem(K(c))||"{}")}catch(e){return{}}},wr=(c,o)=>localStorage.setItem(K(c),JSON.stringify(o)),L={},snap=c=>({docs:Object.entries(rd(c)).map(([id,v])=>({id,data:()=>v}))});
+  return{collection:c=>({doc:id=>({get:async()=>{const v=rd(c)[id];return{exists:v!==undefined,data:()=>v}},set:async v=>{const o=rd(c);o[id]=JSON.parse(JSON.stringify(v));wr(c,o);(L[c]||[]).forEach(f=>f(snap(c)))}}),onSnapshot:cb=>{(L[c]=L[c]||[]).push(cb);const h=e=>{if(e.key===K(c))cb(snap(c))};addEventListener("storage",h);setTimeout(()=>cb(snap(c)));return()=>{L[c]=L[c].filter(f=>f!==cb);removeEventListener("storage",h)}}})}},
+ user:()=>({canEdit:()=>sessionStorage.getItem("qf_admin")==="1",id:async()=>{let u=localStorage.getItem("qf_uid");if(!u){u="p"+Date.now().toString(36)+Math.random().toString(36).slice(2,8);localStorage.setItem("qf_uid",u)}return u}}),
+ downloads:()=>({save:async({filename,data})=>{const b=new Blob([data],{type:filename.endsWith(".svg")?"image/svg+xml":"text/csv;charset=utf-8"}),a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=filename;a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}})
+}[n]())};
+const wait=ms=>new Promise(r=>setTimeout(r,ms)),tmo=(p,ms)=>Promise.race([p,new Promise((_,ko)=>setTimeout(()=>ko(new Error("timeout")),ms))]);
+let fbAuth=null,fbAdmin=false;
+const loadJS=u=>new Promise((ok,ko)=>{const s=document.createElement("script");s.src=u;s.onload=ok;s.onerror=()=>ko(new Error("Chargement impossible : "+u));document.head.appendChild(s)});
+const FBRT={use:async n=>{
+ if(n==="downloads")return LOCAL.use("downloads");
+ if(!FBRT.p)FBRT.p=(async()=>{const B="https://www.gstatic.com/firebasejs/10.12.2/";for(const f of["app","auth","firestore"])await loadJS(B+"firebase-"+f+"-compat.js");firebase.initializeApp(FIREBASE_CONFIG);fbAuth=firebase.auth();const fs=firebase.firestore();try{fs.settings({experimentalAutoDetectLongPolling:true})}catch(e){}
+  const u0=await new Promise(r=>{const off=fbAuth.onAuthStateChanged(x=>{off();r(x)})});if(!u0)await fbAuth.signInAnonymously();else fbAdmin=!u0.isAnonymous;return fs})();
+ const fs=await FBRT.p;if(n==="db")return fs;if(n==="user")return{canEdit:()=>fbAdmin,id:async()=>fbAuth.currentUser.uid}}};
+/* Mode serveur (server.js) : base partagée, plusieurs utilisateurs en même temps */
+let SRV=false;const TOK=()=>sessionStorage.getItem("qf_tok")||"";
+async function api(m,u,b){const r=await tmo(fetch(u,{method:m,headers:{"Content-Type":"application/json",...(TOK()?{Authorization:"Bearer "+TOK()}:{})},body:b===undefined?undefined:JSON.stringify(b)}),15000);let j={};try{j=await r.json()}catch(e){}
+ if(r.status===401&&TOK()){sessionStorage.removeItem("qf_tok");logged=false;if(/^#(admin|bareme|acces|rep-)/.test(location.hash))route()}
+ if(!r.ok){const e=new Error(j.error||"HTTP "+r.status);e.status=r.status;e.code=r.status===403||r.status===409?"permission-denied":"http-"+r.status;throw e}return j}
+const SRVRT={use:async n=>({db:()=>({collection:c=>({doc:id=>({get:async()=>{const j=await api("GET",`/api/c/${c}/${encodeURIComponent(id)}`);return{exists:j.exists,data:()=>j.data}},set:async v=>{await api("PUT",`/api/c/${c}/${encodeURIComponent(id)}`,v)}}),
+ onSnapshot:(cb,eb)=>{let v=0,stop=false,tm;const tick=async()=>{if(stop)return;try{const j=await api("GET",`/api/c/${c}?v=${v}`);if(j.docs){v=j.v;cb({docs:Object.entries(j.docs).map(([id,d])=>({id,data:()=>d}))})}}catch(e){if(eb&&e.status!==401)eb(e)}if(!stop)tm=setTimeout(tick,4000)};tick();return()=>{stop=true;clearTimeout(tm)}}})}),
+ user:()=>({canEdit:()=>!!TOK(),id:async()=>{let u=localStorage.getItem("qf_uid");if(!u){u="p"+Date.now().toString(36)+Math.random().toString(36).slice(2,10);localStorage.setItem("qf_uid",u)}return u}}),downloads:()=>LOCAL.use("downloads")})[n]()};
+const RT=()=>FB?FBRT:SRV?SRVRT:STANDALONE?LOCAL:claude;
+/* Envoi fiable : file d'attente locale (outbox), nouvelles tentatives espacées, brouillon de reprise */
+const OBX="qf_outbox",obx=()=>{try{return JSON.parse(localStorage.getItem(OBX)||"[]")}catch(e){return[]}},obw=a=>{try{localStorage.setItem(OBX,JSON.stringify(a))}catch(e){}},dropOb=(t,r)=>obw(obx().filter(x=>!(x.t===t&&x.rec.date===r.date)));
+async function saveRec(t,rec){if(!db||!usr)return"fail";let id;try{id=await tmo(usr.id(),8000)}catch(e){return"fail"}
+ for(let i=0;i<6;i++){try{await tmo(db.collection(t).doc(id).set(rec),15000);return"ok"}catch(e){if(e&&e.code==="permission-denied")return"denied";if(i<5)await wait(Math.min(20000,600*2**i)+Math.random()*1000)}}return"fail"}
+let flushing=false;
+async function flushOutbox(){if(flushing||!db||!usr)return;flushing=true;try{for(const x of[...obx()]){const r=await saveRec(x.t,x.rec);if(r!=="fail")dropOb(x.t,x.rec)}}finally{flushing=false}}
+addEventListener("online",()=>flushOutbox());setInterval(()=>{if(obx().length)flushOutbox()},30000);
+async function retryNow(){const e=$("#sv");if(e){e.className="mu";e.textContent="Nouvel essai…"}await flushOutbox();const left=obx().length;if(e){e.className=left?"mu err":"mu";e.textContent=left?"Toujours impossible : vos réponses restent conservées sur cet appareil et seront renvoyées automatiquement.":"Merci ! Vos réponses ont bien été enregistrées."}const b=$("#svb");if(b&&!left)b.innerHTML=""}
+async function saveStatus(t,rec){const set=(m,c)=>{const e=$("#sv");if(e){e.className=c||"mu";e.textContent=m}},b=()=>$("#svb");
+ await wait(Math.random()*1200);const r=await saveRec(t,rec);
+ if(r==="ok"||r==="denied")dropOb(t,rec);
+ if(r==="ok"){set("Merci ! Vos réponses ont bien été enregistrées.");if(b())b().innerHTML=""}
+ else if(r==="denied"){set("Ce questionnaire a déjà été enregistré depuis cet appareil, ou l’accès est refusé. Prévenez l’animateur.","mu err");if(b())b().innerHTML=""}
+ else{set("Connexion difficile : vos réponses sont conservées sur cet appareil et seront renvoyées automatiquement. Gardez cette page ouverte.","mu err");if(b())b().innerHTML=`<button class="sec" onclick="retryNow()">Renvoyer maintenant</button>`}}
+let db=null,usr=null,isAdmin=false,logged=STANDALONE&&sessionStorage.getItem("qf_admin")==="1",rows=[],subs=[],BASE=STANDALONE?location.href.split("#")[0]:PUB,flt="all",openId=null,qsrch="",ps=0,pr=0;
+const PTS={entree:Array(20).fill(1),sortie:Array(20).fill(1)};let W={entree:0,sortie:100},OPEN={entree:true,sortie:true,satisfaction:true};
+async function loadOpen(){try{const c=await db.collection("config").doc("etat").get();if(c.exists)OPEN={...OPEN,...c.data()}}catch(e){}}
+(async()=>{if(STANDALONE&&!FB&&/^https?:$/.test(location.protocol)){try{const r=await tmo(fetch("/api/ping"),4000);SRV=r.ok&&(await r.json()).ok===true;if(SRV&&TOK())logged=true}catch(e){}}
+ try{db=await tmo(RT().use("db"),12000);usr=await tmo(RT().use("user"),12000);isAdmin=!!(usr&&usr.canEdit());if(FB&&isAdmin)logged=true}catch(e){}
+ try{const c=await tmo(db.collection("config").doc("points").get(),8000);if(c.exists){const v=c.data();["entree","sortie"].forEach(t=>{if(Array.isArray(v[t])&&v[t].length===20)PTS[t]=v[t].map(Number)});if(v.key)["entree","sortie"].forEach(t=>{if(typeof v.key[t]==="string"&&v.key[t].length===20)KEY[t]=v.key[t]});if(v.w)W={...W,...v.w}}}catch(e){}
+ await Promise.race([loadOpen(),wait(6000)]);route();flushOutbox()})();
+window.addEventListener("hashchange",route);
+const nav=()=>{const h=location.hash.slice(1),b=(k,l)=>`<button class="${h===k?"":"sec"}" onclick="location.hash='${k}'">${l}</button>`;if(!logged&&/^(entree|sortie|satisfaction)$/.test(h))return"";return `<nav>${b("","Accueil")}${logged?b("admin","Résultats")+b("bareme","Barème")+b("acces","Formulaires &amp; QR")+'<button class="sec" onclick="logout()">Déconnexion</button>':""}</nav>`};
+function route(){const h=location.hash.slice(1);window.scrollTo(0,0);app.classList.toggle("wide",h==="admin");
+ if(h==="satisfaction")return formSat();
+ if(h==="entree"||h==="sortie")return form(h);
+ if(/^rep-(entree|sortie)-.+/.test(h)){if(!logged)return login(h);return reponse()}
+ if(h==="admin"||h==="bareme"||h==="acces"){if(!logged)return login(h);return({admin,bareme,acces})[h]()}
+ home()}
+function login(n){const inp=(id,ty,ac,l)=>`<label class="f">${l}<input type="${ty}" id="${id}" autocomplete="${ac}" onkeydown="if(event.key==='Enter')doLogin('${n}')" style="margin-top:6px;width:100%;box-sizing:border-box;padding:11px 12px;min-height:46px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit"></label>`;
+ app.innerHTML=nav()+`<div class="card"><h1>Connexion administrateur</h1><p class="mu">Accès réservé aux administrateurs du projet. ${STANDALONE?(FB?"Saisissez votre e-mail et votre mot de passe administrateur.":"Saisissez le mot de passe administrateur."):"Votre compte est vérifié automatiquement."}</p>${FB?inp("em","email","username","E-mail"):""}${STANDALONE?inp("pw","password","current-password","Mot de passe"):""}<p id="lm" class="err"></p><button onclick="doLogin('${n}')">Se connecter</button></div>`}
+async function doLogin(n){const ok=()=>{logged=true;location.hash=n;route()};
+ if(FB){try{await fbAuth.signInWithEmailAndPassword($("#em").value.trim(),$("#pw").value);fbAdmin=true;isAdmin=true;ok()}catch(e){$("#lm").textContent="Identifiants incorrects."}return}
+ if(SRV){try{const j=await api("POST","/api/login",{pw:$("#pw").value});sessionStorage.setItem("qf_tok",j.token);isAdmin=true;ok()}catch(e){$("#lm").textContent=e.status===429?"Trop de tentatives : réessayez dans quelques minutes.":"Mot de passe incorrect."}return}
+ if(STANDALONE){if(($("#pw").value||"")===ADMIN_PW){sessionStorage.setItem("qf_admin","1");isAdmin=true;ok()}else $("#lm").textContent="Mot de passe incorrect.";return}
+ if(isAdmin)ok();else $("#lm").textContent=usr?"Ce compte n’a pas les droits d’administrateur.":"Impossible de vérifier votre compte : connexion requise."}
+function logout(){logged=false;sessionStorage.removeItem("qf_admin");sessionStorage.removeItem("qf_tok");if(FB){fbAdmin=false;isAdmin=false;fbAuth.signOut().then(()=>fbAuth.signInAnonymously()).catch(()=>{})}subs.forEach(u=>typeof u==="function"&&u());subs=[];location.hash="";route()}
+function home(){const b=(t,l)=>OPEN[t]?`<button class="full" onclick="location.hash='${t}'">${l}</button>`:`<p class="err">Questionnaire fermé pour le moment.</p>`;
+ app.innerHTML=`<h1>Formation Marketing Export et stratégies d’accès aux marchés</h1><p class="lead">Trois questionnaires jalonnent la formation : entrée, sortie et satisfaction. Pour les QCM : 20 questions, une seule réponse par question.</p><ol class="steps"><li><b>1</b>Indiquez votre nom</li><li><b>2</b>Répondez aux 20 questions</li><li><b>3</b>Découvrez votre score</li></ol>
+<div class="grid"><div class="card"><h2 style="margin-top:0">Questionnaire d’entrée</h2><div class="chips"><span class="chip">20 questions</span><span class="chip">environ 20 min</span></div><p class="mu">À remplir au début de la formation.</p>${b("entree","Remplir le questionnaire d’entrée")}</div>
+<div class="card"><h2 style="margin-top:0">Questionnaire de sortie</h2><div class="chips"><span class="chip">20 questions</span><span class="chip">environ 20 min</span></div><p class="mu">À remplir à la fin de la formation.</p>${b("sortie","Remplir le questionnaire de sortie")}</div><div class="card"><h2 style="margin-top:0">Questionnaire de satisfaction</h2><div class="chips"><span class="chip">anonyme</span><span class="chip">environ 10 min</span></div><p class="mu">À remplir à la fin de l’atelier pour donner votre avis.</p>${b("satisfaction","Remplir le questionnaire de satisfaction")}</div></div>
+<p class="foot"><a href="#admin">Espace administrateur</a></p>`}
+function form(t){const d=Q[t];
+ if(!OPEN[t]){app.innerHTML=nav()+`<h1>${d.titre}</h1><div class="card"><p>Ce questionnaire est actuellement fermé. Merci de vous rapprocher de l’animateur.</p></div>`;return}
+ let h=nav()+`<h1>${d.titre}</h1><p class="mu"><b>${d.sous}</b><br>Chaque bonne réponse rapporte le nombre de points indiqué. Commencez par vous identifier : le chronomètre démarre dès que vous validez cette étape.</p>
+<div class="pg" id="pgw" style="display:none"><div class="pgt"><b id="pg"></b><span><span id="chr" class="chr" title="Temps écoulé">00:00</span><span id="pc"></span></span></div><div class="bar"><i id="pbf"></i></div></div>
+<div class="stp" data-s="-1"><h2>Étape 1 : Identification</h2><div class="card" id="idc"><label class="f">Nom et prénom <em>obligatoire</em><input type="text" id="nom" autocomplete="name" maxlength="120"></label><label class="f">Entreprise <em>facultatif</em><input type="text" id="ent" autocomplete="organization" maxlength="120"></label></div><p id="idm" class="err" role="alert"></p><button class="full" id="st0">Commencer le questionnaire →</button></div>`;
+ d.q.forEach((q,i)=>{const si=d.sec.findIndex(x=>x[0]===i);if(si>=0){if(si)h+="</div>";h+=`<div class="stp" data-s="${si}" style="display:none"><h2>${d.sec[si][1]}</h2>`}
+  h+=`<div class="card q" id="c${i}"><div class="qh"><span class="qn">${i+1}</span><b>${q[0]}</b><span class="pt">${PTS[t][i]} pt</span></div>${(t==="entree"?[...q[1],"Je ne sais pas"]:q[1]).map((o,j)=>`<label class="o"><input type="radio" name="q${i}" value="${j}"><i class="lt">${LET[j]}</i><span>${o}</span></label>`).join("")}</div>`});
+ h+=`</div><p id="msg" class="err" role="alert"></p><div class="nv"><button class="sec" id="pv">← Précédent</button> <button id="nx">Suivant →</button> <button id="go">Envoyer mes réponses</button></div>`;app.innerHTML=h;
+ let st=-1;const N=d.sec.length,show=()=>{document.querySelectorAll(".stp").forEach(e=>e.style.display=+e.dataset.s===st?"":"none");$(".nv").style.display=st<0?"none":"";$("#pgw").style.display=st<0?"none":"";$("#pv").style.display=st>0?"":"none";$("#nx").style.display=st<N-1?"":"none";$("#go").style.display=st===N-1?"":"none";if(st>=0)$("#pg").textContent=`Partie ${st+1} sur ${N} : ${d.sec[st][1]}`;window.scrollTo(0,0);sv()};
+ window.gs=k=>{st=k;show()};$("#pv").onclick=()=>{st--;show()};$("#nx").onclick=()=>{st++;show()};const upd=()=>{const n=d.q.filter((_,i)=>document.querySelector(`input[name=q${i}]:checked`)).length;$("#pbf").style.width=n/d.q.length*100+"%";$("#pc").textContent=n+" / "+d.q.length+" répondues"};
+ app.querySelectorAll("input[type=radio]").forEach(x=>x.onchange=()=>{x.closest(".q").classList.remove("miss");upd();sv()});clearInterval(window.chT);window.t0form=null;show();upd();
+ const DK="qf_draft_"+t;
+ function sv(){if(!window.t0form)return;try{localStorage.setItem(DK,JSON.stringify({nom:$("#nom").value,ent:$("#ent").value,t0:window.t0form,st,a:d.q.map((_,i)=>{const r=document.querySelector(`input[name=q${i}]:checked`);return r?+r.value:-1})}))}catch(e){}}
+ const run=t0=>{window.t0form=t0;const tick=()=>{const e=$("#chr");if(!e)return clearInterval(window.chT);e.textContent=fmt(Math.max(0,Math.round((Date.now()-window.t0form)/1000)))};tick();clearInterval(window.chT);window.chT=setInterval(tick,1000)};
+ const start=()=>{if(!$("#nom").value.trim()){$("#idm").textContent="Veuillez indiquer votre nom et prénom pour commencer.";$("#nom").focus();return}$("#idm").textContent="";run(Date.now());st=0;show()};
+ $("#st0").onclick=start;$("#nom").onkeydown=e=>{if(e.key==="Enter")start()};$("#ent").onkeydown=e=>{if(e.key==="Enter")start()};$("#nom").oninput=$("#ent").oninput=sv;
+ try{const D=JSON.parse(localStorage.getItem(DK)||"null");if(D&&D.t0&&D.nom&&Date.now()-D.t0<6*36e5){$("#nom").value=D.nom;$("#ent").value=D.ent||"";(D.a||[]).forEach((v,i)=>{if(v>=0){const x=document.querySelector(`input[name=q${i}][value="${v}"]`);if(x)x.checked=true}});run(D.t0);st=Math.min(Math.max(D.st|0,0),N-1);show();upd()}}catch(e){}
+ $("#go").onclick=()=>send(t)}
+async function send(t){const d=Q[t],nom=$("#nom").value.trim(),m=$("#msg");
+ const ans=d.q.map((_,i)=>{const r=document.querySelector(`input[name=q${i}]:checked`);return r?+r.value:-1});
+ if(!nom||!window.t0form){gs(-1);$("#idm").textContent="Veuillez indiquer votre nom et prénom pour commencer.";return}
+ const manq=ans.map((a,i)=>a<0?i+1:0).filter(Boolean);
+ if(manq.length){gs(d.sec.reduce((a,x,k)=>x[0]<=manq[0]-1?k:a,0));manq.forEach(n=>$("#c"+(n-1)).classList.add("miss"));m.textContent="Il manque une réponse aux questions : "+manq.join(", ")+".";$("#c"+(manq[0]-1)).scrollIntoView({block:"center"});return}
+ await Promise.race([loadOpen(),wait(4000)]);if(!OPEN[t]){m.textContent="Ce questionnaire vient d’être fermé.";return}
+ const P=PTS[t],max=r2(P.reduce((s,x)=>s+x,0)),score=r2(ans.reduce((s,a,i)=>s+(LET[a]===KEY[t][i]?P[i]:0),0));
+ const parts=d.sec.map((s,k)=>{const a=s[0],b=d.sec[k+1]?d.sec[k+1][0]:20;let g=0,m=0;for(let i=a;i<b;i++){m+=P[i];if(LET[ans[i]]===KEY[t][i])g+=P[i]}return `<div class="sc"><div class="pgt"><span>${s[1]}</span><b>${r2(g)} / ${r2(m)}</b></div><div class="bar"><i style="width:${m?g/m*100:0}%"></i></div></div>`}).join("");
+ const rec={type:t,nom:nom.slice(0,120),entreprise:$("#ent").value.trim().slice(0,120),reponses:ans.map(a=>LET[a]).join(""),score,max,date:new Date().toISOString(),duree:Math.max(0,Math.round((Date.now()-(window.t0form||Date.now()))/1000))};clearInterval(window.chT);
+ obw(obx().concat([{t,rec}]));try{localStorage.removeItem("qf_draft_"+t)}catch(e){}
+ app.innerHTML=nav()+`<div class="card res"><p class="mu">${d.titre}</p><div class="big">${score}<small> / ${max}</small></div><p><span class="pill ${lv(score,max)}">${interp(score,max)}</span></p><p class="mu">Temps de réponse : ${fmtL(rec.duree)}</p><div class="bar"><i style="width:${max?score/max*100:0}%"></i></div><div class="parts">${parts}</div>
+ <p class="mu" id="sv" aria-live="polite">Enregistrement en cours…</p><p id="svb"></p>
+ <p class="mu">Ce résultat est indicatif et ne constitue pas une évaluation certificative.</p><p><button class="sec" onclick="location.hash=''">Retour à l’accueil</button></p></div>`;
+ saveStatus(t,rec)}
+const r2=x=>Math.round(x*100)/100,n20=r=>r?r.score/(r.max||20)*20:0,sc=r=>r?`${r.score}/${r.max||20}`:"–";
+const prog=p=>{if(!p.e||!p.s)return "–";const d=r2(n20(p.s)-n20(p.e));return (d>0?"+":"")+d};
+function suivi(){const P={};rows.forEach(r=>{const p=P[r.id]=P[r.id]||{};p.nom=p.nom||r.nom;p.ent=p.ent||r.entreprise;p[r.type==="entree"?"e":"s"]=r});
+ return Object.values(P).sort((a,b)=>(a.nom||"").localeCompare(b.nom||"")).map(p=>{const we=+W.entree||0,ws=+W.sortie||0;
+  p.f=(!(we+ws)||(we&&!p.e)||(ws&&!p.s))?null:r2((n20(p.e)*we+n20(p.s)*ws)/(we+ws));return p})}
+function admin(){app.innerHTML=nav()+`<h1>Résultats des questionnaires</h1><p class="mu" id="st">Chargement…</p>`;startSubs()}
+function startSubs(){
+ if(!db){$("#st").textContent="Base de données indisponible.";return}
+ subs.forEach(u=>typeof u==="function"&&u());subs=[];
+ const tm=setTimeout(()=>{if($("#st"))$("#st").textContent="Délai dépassé : aucune donnée reçue."},10000);
+ let dt=null;const part={entree:[],sortie:[],satisfaction:[]},paint=()=>{dt=null;if(logged){if(location.hash==="#admin")draw();else if(/^#rep-/.test(location.hash))showRep()}},up=()=>{clearTimeout(tm);rows=[...part.entree,...part.sortie].sort((a,b)=>b.date>a.date?1:-1);srows=part.satisfaction.slice().sort((a,b)=>b.date>a.date?1:-1);if(!dt)dt=setTimeout(paint,rows.length>60?1500:0)};
+ ["entree","sortie","satisfaction"].forEach(t=>subs.push(db.collection(t).onSnapshot(s=>{part[t]=s.docs.map(x=>({id:x.id,...x.data()}));up()},e=>{$("#st")&&($("#st").textContent="Erreur : "+e.message)})))}
+const qc=(r,i)=>{const d=Q[r.type],k=KEY[r.type],a=[...r.reponses][i],g=a===k[i],opt=x=>x==="?"?"Je ne sais pas":d.q[i][1][LET.indexOf(x)]||"Non renseignée";
+ return `<div class="da ${g?"g":"b"}"><span class="qn">${i+1}</span><div><b>${d.q[i][0]}</b><div class="ans">${g?"✓":"✗"} Réponse choisie : ${a==="?"?"":a+". "}${esc(opt(a))}</div>${g?"":`<div class="mu">Bonne réponse : ${k[i]}. ${esc(opt(k[i]))}</div>`}</div></div>`};
+let qo=new Set(),curRep=null,curKey="";
+function togQ(i){qo.has(i)?qo.delete(i):qo.add(i);paintQ()}
+function paintQ(){const q=$("#qd");if(!q||!curRep)return;q.innerHTML=[...qo].sort((a,b)=>a-b).map(i=>qc(curRep,i)).join("");document.querySelectorAll(".nb").forEach(b=>{const on=qo.has(+b.dataset.n-1);b.classList.toggle("on",on);b.setAttribute("aria-expanded",on)})}
+function goRep(i){const x=rows[i];if(x)location.hash="rep-"+x.type+"-"+encodeURIComponent(x.id)}
+function reponse(){showRep();if(!rows.length)startSubs()}
+function showRep(){const m=location.hash.slice(1).match(/^rep-(entree|sortie)-(.+)$/),id=decodeURIComponent(m[2]),r=rows.find(x=>x.id===id&&x.type===m[1]),back=`<p><button class="sec" onclick="location.hash='admin'">← Retour aux résultats</button></p>`;
+ if(!r){app.innerHTML=nav()+back+`<p class="mu" id="st">${rows.length?"Réponse introuvable.":"Chargement…"}</p>`;return}
+ const kk=KEY[r.type],ok=[],ko=[];[...r.reponses].forEach((a,j)=>(a===kk[j]?ok:ko).push(j+1));
+ const chips=(L,c)=>L.length?L.map(n=>`<button class="nb ${c}" data-n="${n}" aria-label="Question ${n}" aria-expanded="false" onclick="togQ(${n-1})">${n}</button>`).join(""):`<span class="mu">Aucune</span>`;
+ const sum=`<div class="sm"><p class="mu" style="margin-bottom:12px">Touchez un numéro pour afficher la question, touchez-le encore pour la masquer.</p><p class="mu">Questions trouvées (${ok.length})</p><div class="nums">${chips(ok,"g")}</div><p class="mu">Questions non trouvées (${ko.length})</p><div class="nums">${chips(ko,"b")}</div><div id="qd" class="qd"></div></div>`;
+ const ck=r.type+r.id;if(curKey!==ck){curKey=ck;qo=new Set()}curRep=r;
+ const i=rows.indexOf(r),lab=x=>esc(x.nom)+(x.entreprise?" – "+esc(x.entreprise):"")+" ("+(x.type==="entree"?"Entrée":"Sortie")+")",bar=`<div class="swb"><button class="sec" onclick="location.hash='admin'">← Retour aux résultats</button><div class="sw"><button class="sec" aria-label="Participant précédent" ${i>0?"":"disabled"} onclick="goRep(${i-1})">‹</button><select aria-label="Changer de participant" onchange="location.hash=this.value">${rows.map(x=>`<option value="rep-${x.type}-${encodeURIComponent(x.id)}"${x===r?" selected":""}>${lab(x)}</option>`).join("")}</select><button class="sec" aria-label="Participant suivant" ${i<rows.length-1?"":"disabled"} onclick="goRep(${i+1})">›</button></div></div>`;
+ app.innerHTML=nav()+bar+`<div class="card" style="padding:22px"><p class="mu" style="margin:0">${r.type==="entree"?"Questionnaire d’entrée":"Questionnaire de sortie"}</p><h1 style="margin:.15em 0 .1em">${esc(r.nom)}</h1>${r.entreprise?`<p style="margin:0;font-weight:600">${esc(r.entreprise)}</p>`:""}<p class="mu" style="margin:2px 0 4px">${new Date(r.date).toLocaleString("fr-FR",{dateStyle:"long",timeStyle:"short"})}</p><p class="mu" style="margin:0 0 14px">Temps de réponse : <b>${r.duree!=null?fmtL(r.duree):"non enregistré"}</b></p><div class="big">${sc(r)}</div><p style="margin-bottom:0"><span class="pill ${lv(r.score,r.max||20)}">${interp(r.score,r.max||20)}</span></p>${sum}</div><div class="rep">${det(r)}</div>`;paintQ()}
+const det=r=>{const d=Q[r.type],k=KEY[r.type],R=[...r.reponses],ok=R.filter((a,i)=>a===k[i]).length,tx=a=>a==="?"?"Je ne sais pas":null,opt=(i,a)=>tx(a)||d.q[i][1][LET.indexOf(a)]||"Non renseignée";
+ return `<div class="det"><p class="mu" style="margin:14px 0 0">${ok} bonne(s) réponse(s) sur ${R.length}. La correction suit les bonnes réponses actuellement définies dans « Barème ».</p>`+d.sec.map((s,sk)=>{const e=d.sec[sk+1]?d.sec[sk+1][0]:R.length;return `<h3>${esc(s[1])}</h3>`+R.slice(s[0],e).map((a,j)=>qc(r,s[0]+j)).join("")}).join("")+`</div>`};
+const pgs=(k,x)=>{if(k==="s")ps=Math.max(0,ps+x);else pr=Math.max(0,pr+x);draw()};
+const pager=(k,n,p,PS)=>n>PS?`<p class="mu" style="display:flex;gap:10px;align-items:center;flex-wrap:wrap"><button class="sec" ${p>0?"":"disabled"} onclick="pgs('${k}',-1)">‹ Précédent</button><span>${p*PS+1}–${Math.min(n,p*PS+PS)} sur ${n}</span><button class="sec" ${(p+1)*PS<n?"":"disabled"} onclick="pgs('${k}',1)">Suivant ›</button></p>`:"";
+function draw(){const PS=50,Z=qsrch.trim().toLowerCase(),mt=x=>!Z||((x.nom||"")+" "+(x.ent??x.entreprise??"")).toLowerCase().includes(Z),f0=rows.filter(r=>(flt==="all"||r.type===flt)&&mt(r));pr=Math.min(pr,Math.max(0,Math.ceil(f0.length/PS)-1));const f=f0.slice(pr*PS,pr*PS+PS),foc=document.activeElement&&document.activeElement.id==="qs"?document.activeElement.selectionStart:-1;
+ const avg=t=>{const a=rows.filter(r=>r.type===t);return a.length?(a.reduce((s,r)=>s+n20(r),0)/a.length).toFixed(1):"–"};
+ const nE=rows.filter(r=>r.type==="entree").length,nS=rows.filter(r=>r.type==="sortie").length;
+ const pg=suivi().map(prog).filter(x=>x!=="–").map(Number),pa=pg.length?pg.reduce((a,b)=>a+b,0)/pg.length:null;
+ let h=nav()+`<h1>Résultats des questionnaires</h1><div class="grid">
+ <div class="card"><div class="mu">Entrée · ${nE} réponse(s)</div><div class="big">${avg("entree")}</div><div class="mu">moyenne /20</div></div>
+ <div class="card"><div class="mu">Sortie · ${nS} réponse(s)</div><div class="big">${avg("sortie")}</div><div class="mu">moyenne /20</div></div>
+ <div class="card"><div class="mu">Progression · ${pg.length} participant(s)</div><div class="big">${pa==null?"–":(pa>0?"+":"")+pa.toFixed(1)}</div><div class="mu">points sur 20 en moyenne</div></div></div>
+ <p><input type="search" id="qs" placeholder="Rechercher un nom ou une entreprise…" value="${esc(qsrch)}" oninput="qsrch=this.value;ps=0;pr=0;draw()" style="width:100%;box-sizing:border-box;padding:11px 12px;min-height:46px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit"></p>
+ <h2>Suivi des entreprises</h2><p class="mu">Note finale = ${W.entree} % du score d’entrée + ${W.sortie} % du score de sortie, ramenés sur 20 (modifiable dans « Barème »).</p>
+ <div class="card tw"><table><tr><th>Nom</th><th>Entreprise</th><th>Score d’entrée</th><th>Score de sortie</th><th>Progression /20</th><th>Note finale /20</th><th>Appréciation</th></tr>`;
+ const SA=suivi().filter(mt);ps=Math.min(ps,Math.max(0,Math.ceil(SA.length/PS)-1));const S=SA.slice(ps*PS,ps*PS+PS);S.forEach(p=>{h+=`<tr><td>${esc(p.nom)}</td><td>${esc(p.ent)}</td><td>${sc(p.e)}</td><td>${sc(p.s)}</td><td>${prog(p)}</td><td><b>${p.f==null?"–":p.f}</b></td><td>${p.f==null?"":`<span class="pill ${lv(p.f)}">${interp(p.f)}</span>`}</td></tr>`});
+ if(!S.length)h+=`<tr><td colspan="7" class="mu">Aucune réponse pour le moment.</td></tr>`;
+ h+=`</table></div>${pager("s",SA.length,ps,PS)}<p><button class="sec" onclick="csv('suivi')">Exporter le suivi (CSV)</button></p><h2>Détail des réponses</h2>
+ <p><select id="fl" onchange="flt=this.value;draw()"><option value="all">Tous</option><option value="entree">Entrée</option><option value="sortie">Sortie</option></select>
+ <button class="sec" onclick="csv('rep')">Exporter les réponses (CSV)</button></p><div class="card tw"><table><tr><th>Date</th><th>Nom</th><th>Entreprise</th><th>Type</th><th>Score</th><th>Durée</th><th>Niveau</th><th></th></tr>`;
+ f.forEach(r=>{const k=KEY[r.type];h+=`<tr><td>${new Date(r.date).toLocaleString("fr-FR",{dateStyle:"short",timeStyle:"short"})}</td><td>${esc(r.nom)}</td><td>${esc(r.entreprise)}</td><td>${r.type==="entree"?"Entrée":"Sortie"}</td><td><b>${sc(r)}</b></td><td>${r.duree!=null?fmt(r.duree):"–"}</td><td><span class="pill ${lv(r.score,r.max||20)}">${interp(r.score,r.max||20)}</span></td>
+ <td><button class="sec" onclick="location.hash='rep-${r.type}-${encodeURIComponent(r.id)}'">Voir les réponses</button></td></tr>`;
+ });
+ if(!f.length)h+=`<tr><td colspan="8" class="mu">Aucune réponse pour le moment.</td></tr>`;
+ app.innerHTML=h+`</table></div>`+pager("r",f0.length,pr,PS)+satRes();$("#fl").value=flt;if(foc>=0){const q=$("#qs");q.focus();try{q.setSelectionRange(foc,foc)}catch(e){}}}
+/* ===== Questionnaire de satisfaction (atelier 1) ===== */
+Q.satisfaction={titre:"Questionnaire de satisfaction",sous:"Premier atelier de préparation à l’export · 9-11 novembre 2026"};
+let srows=[];
+const SAT5=[[5,"Très satisfait"],[4,"Satisfait"],[3,"Moyennement satisfait"],[2,"Peu satisfait"],[1,"Pas satisfait du tout"]],SATT=[[1,"Insuffisant"],[2,"Adapté"],[3,"Excessif"]],SATL=[[3,"Version initiale disponible"],[2,"À compléter"],[1,"Non démarré"]],SATA=[[4,"Tout à fait d’accord"],[3,"Plutôt d’accord"],[2,"Plutôt pas d’accord"],[1,"Pas du tout d’accord"]];
+const PF=["Dirigeant(e) ou gérant(e)","Responsable commercial(e) ou marketing","Responsable technique, production ou qualité","Autre"],PE=["Exporte régulièrement","A déjà exporté ponctuellement","N’a jamais exporté"],PX=["Une femme","Un homme"];
+const GL=["Réponse de l’atelier à vos attentes de départ","Pertinence de l’atelier pour les besoins de votre entreprise à l’export","Adaptation de l’accompagnement à la préparation de votre entreprise pour l’export","Utilité de l’atelier pour la suite du parcours (coaching, ateliers 2 et 3)"];
+const DG=[["Contenus et objectifs",["Clarté des objectifs et des livrables présentés à l’ouverture","Pertinence des thèmes abordés","Équilibre entre apports techniques et travaux pratiques"]],["Animation et facilitation",["Qualité des présentations (clarté, exemples, illustrations)","Maîtrise des sujets par les consultants","Appui de votre consultant référent (disponibilité, conseils)","Utilité de votre entretien individuel (30 min, lundi)","Possibilité d’intervenir et de poser vos questions","Qualité des échanges entre participants (partage d’expériences)","Gestion du temps et respect des horaires"]],["Travaux et supports",["Utilité des travaux de groupe et des exercices sur les données de votre entreprise","Documentation et supports (présentations, gabarits, canevas)"]],["Organisation et conditions matérielles",["Qualité de l’organisation d’ensemble (programme, coordination, logistique)","Information reçue avant l’atelier (invitation, TDR, liste des pièces à apporter)","Accueil et enregistrement","Salle et équipements (place, sonorisation, projection, espaces d’entretien)","Connexion internet et prises électriques pour les ordinateurs","Restauration (pause-café et déjeuner)","Hébergement (participants hors Abidjan)","Prise en charge du transport (participants de l’intérieur)","Respect de la confidentialité des données de votre entreprise"]]],DL=DG.flatMap(g=>g[1]);
+const TL=["Diagnostic export (lundi et mardi matin)","Fiches produits (mardi après-midi)","Plan d’affaires à l’international (mercredi)","Durée totale de l’atelier (3 jours)"],LL=["Diagnostic export draft 0","Ébauche de fiche produit (produit phare)","Canevas du plan d’affaires à l’international (rubriques initiales)","Plan d’actions pour le deuxième atelier (responsables, échéances)"];
+const RL=["Je sais utiliser l’outil de diagnostic export.","Mon diagnostic draft 0 fait ressortir les forces, contraintes et besoins d’appui de mon entreprise.","Je sais quelles informations un acheteur attend dans une fiche produit.","Je connais les exigences de labellisation ou de certification à vérifier pour mon produit phare.","Je comprends comment mon diagnostic alimente le canevas du plan d’affaires à l’international.","Je sais quelles données préparer pour le plan d’affaires (marchés, prévisions, financement).","Je sais ce que je dois faire d’ici le deuxième atelier, avec qui et pour quand.","Je me sens mieux préparé(e) à engager mon entreprise à l’export qu’avant l’atelier."];
+const BL=["Compléter le diagnostic","Finaliser la fiche produit","Démarches de labellisation ou de certification","Traçabilité","Données du plan d’affaires (marchés, prévisions, financement)","Autre"],OL=["Ce que vous avez le plus apprécié","Ce qui pourrait être amélioré, en priorité pour l’atelier 2","Vos principales recommandations aux organisateurs","Les sujets à approfondir lors des prochaines étapes (coaching, ateliers 2 et 3)"];
+function formSat(){const t="satisfaction";
+ if(!OPEN[t]){app.innerHTML=nav()+`<h1>${Q[t].titre}</h1><div class="card"><p>Ce questionnaire est actuellement fermé. Merci de vous rapprocher de l’animateur.</p></div>`;return}
+ const rad=(n,v,l,c)=>`<label class="sx${c||""}"><input type="radio" name="${n}" value="${v}"><span>${l}</span></label>`,
+ grp=(n,o,nc,c)=>`<div class="sxg${c||""}">${o.map(x=>rad(n,x[0],x[1])).join("")}${nc?rad(n,0,"NC (non concerné)"," nc"):""}</div>`,
+ QC=(n,lab,txt,body,r)=>`<div class="card q" data-r="${r?1:0}" data-lab="${lab}" id="sq-${n}"><div class="qh"><span class="qn">${lab}</span><b>${txt}</b></div>${body}</div>`,ix=a=>a.map((l,i)=>[i,l]),opt=' <span class="mu">(facultatif)</span>';
+ const S=[["Informations générales",`<div class="card"><p style="margin:0">Ce questionnaire est <b>anonyme</b> : les réponses sont traitées de façon groupée et serviront à améliorer le coaching et les ateliers 2 et 3. Durée : 10 minutes. <b>NC</b> = non concerné.</p></div><div class="card"><label class="f">Structure / organisation <em>facultatif</em><input type="text" id="sx-p1" maxlength="120" autocomplete="organization"></label></div>`+QC("p2","P2","Fonction"+opt,grp("p2",ix(PF)))+QC("p3","P3","Expérience export de l’entreprise"+opt,grp("p3",ix(PE)))+QC("p4","P4","Vous êtes"+opt,grp("p4",ix(PX)))],
+ ["Appréciation générale de l’atelier",GL.map((x,i)=>QC("g"+i,"G"+(i+1),x,grp("g"+i,SAT5),1)).join("")],
+ ["Évaluation détaillée",DG.map(([h,a])=>`<p class="sg">${h}</p>`+a.map(x=>{const i=DL.indexOf(x);return QC("d"+i,"D"+(i+1),x,grp("d"+i,SAT5,1),1)}).join("")).join("")+`<p class="sg">Le temps consacré à chaque volet était-il suffisant ?</p>`+TL.map((x,i)=>QC("t"+i,"T"+(i+1),x,grp("t"+i,SATT),1)).join("")],
+ ["Atteinte des résultats",QC("prof","4.0","Vous répondez en tant que :",grp("prof",[[1,"Entreprise bénéficiaire"],[2,"Agent de CI-EXPORT"]]),1)+`<div id="s4"><p class="sg">4.1 Où en sont vos livrables à la clôture ?</p>`+LL.map((x,i)=>QC("l"+i,"L"+(i+1),x,grp("l"+i,SATL),1)).join("")+`<p class="sg">4.2 Dans quelle mesure êtes-vous d’accord avec les affirmations suivantes ?</p>`+RL.map((x,i)=>QC("r"+i,"R"+(i+1),x,grp("r"+i,SATA),1)).join("")+`<p class="sg">4.3 et 4.4 Acquis et besoins d’appui</p><div class="card"><label class="f">Citez les deux principaux acquis que vous allez utiliser dans votre entreprise <em>facultatif</em><input type="text" id="sx-a1" maxlength="200"><input type="text" id="sx-a2" maxlength="200"></label></div><div class="card"><b>Sur quoi attendez-vous le plus d’appui pendant le coaching, avant l’atelier 2 ?</b><span class="mu"> Deux choix au maximum.</span>${BL.map((x,i)=>`<label class="o"><input type="checkbox" name="b" value="${i}"><i class="lt"></i><span>${x}</span></label>`).join("")}<input type="text" id="sx-bo" placeholder="Si autre, précisez" maxlength="120" style="margin-top:8px"></div></div>`],
+ ["Questions ouvertes",OL.map((x,i)=>`<div class="card"><label class="f">${x} <em>facultatif</em><textarea id="sx-o${i}" maxlength="600"></textarea></label></div>`).join("")],
+ ["Satisfaction globale",QC("s","S1","Note globale de l’atelier",`<p class="mu" style="margin:0 0 10px">0 = très mauvais · 10 = excellent</p>`+grp("s",Array.from({length:11},(_,i)=>[i,i]),0," n11"),1)]];
+ app.innerHTML=nav()+`<h1>${Q[t].titre}</h1><p class="mu"><b>${Q[t].sous}</b></p><div class="pg"><div class="pgt"><b id="pg"></b><span id="pc"></span></div><div class="bar"><i id="pbf"></i></div></div>`+S.map((s,k)=>`<div class="stp" data-s="${k}" style="display:none"><h2>${k+1}. ${s[0]}</h2>${s[1]}</div>`).join("")+`<p id="msg" class="err" role="alert"></p><div class="nv"><button class="sec" id="pv">← Précédent</button> <button id="nx">Suivant →</button> <button id="go">Envoyer mes réponses</button></div>`;
+ let st=0;const N=S.length,DK="qf_draft_satisfaction",val=n=>{const c=document.querySelector(`input[name="${n}"]:checked`);return c?+c.value:null},ans=c=>!!c.querySelector("input:checked"),reqs=()=>[...document.querySelectorAll(".q[data-r='1']")].filter(c=>!(c.closest("#s4")&&val("prof")===2)),
+ snap=()=>{const r={};document.querySelectorAll("#app input[type=radio]:checked").forEach(x=>r[x.name]=x.value);return{ts:Date.now(),st,r,c:[...document.querySelectorAll("input[name=b]:checked")].map(x=>x.value),x:Object.fromEntries([...document.querySelectorAll("#app input[type=text],#app textarea")].map(x=>[x.id,x.value]))}},
+ sv=()=>{try{localStorage.setItem(DK,JSON.stringify(snap()))}catch(e){}},gate=()=>{$("#s4").style.display=val("prof")===2?"none":""},
+ upd=()=>{const R=reqs(),n=R.filter(ans).length;$("#pbf").style.width=(R.length?n/R.length*100:0)+"%";$("#pc").textContent=n+" / "+R.length+" obligatoires"},
+ show=()=>{document.querySelectorAll(".stp").forEach(e=>e.style.display=+e.dataset.s===st?"":"none");$("#pv").style.display=st>0?"":"none";$("#nx").style.display=st<N-1?"":"none";$("#go").style.display=st===N-1?"":"none";$("#pg").textContent=`Partie ${st+1} sur ${N} : ${S[st][0]}`;window.scrollTo(0,0);sv()};
+ $("#pv").onclick=()=>{st--;show()};$("#nx").onclick=()=>{st++;show()};
+ app.querySelectorAll("input,textarea").forEach(x=>{x.oninput=sv;x.onchange=()=>{const c=x.closest(".q");if(c)c.classList.remove("miss");if(x.name==="b"&&document.querySelectorAll("input[name=b]:checked").length>2){x.checked=false;$("#msg").textContent="Deux choix au maximum pour la question 4.4."}else $("#msg").textContent="";gate();upd();sv()}});
+ try{const D=JSON.parse(localStorage.getItem(DK)||"null");if(D&&Date.now()-D.ts<6*36e5){Object.entries(D.r||{}).forEach(([k,v])=>{const e=document.querySelector(`input[name="${k}"][value="${v}"]`);if(e)e.checked=true});(D.c||[]).forEach(v=>{const e=document.querySelector(`input[name=b][value="${v}"]`);if(e)e.checked=true});Object.entries(D.x||{}).forEach(([k,v])=>{const e=document.getElementById(k);if(e)e.value=v});st=Math.min(Math.max(D.st|0,0),N-1)}}catch(e){}
+ gate();show();upd();
+ $("#go").onclick=async()=>{const m=$("#msg"),R=reqs(),miss=R.filter(c=>!ans(c));
+  if(miss.length){R.forEach(c=>c.classList.toggle("miss",!ans(c)));st=+miss[0].closest(".stp").dataset.s;show();m.textContent="Il manque une réponse à : "+miss.map(c=>c.dataset.lab).join(", ")+".";miss[0].scrollIntoView({block:"center"});return}
+  await Promise.race([loadOpen(),wait(4000)]);if(!OPEN[t]){m.textContent="Ce questionnaire vient d’être fermé.";return}
+  const tx=id=>$("#"+id).value.trim(),ben=val("prof")!==2,rec={type:t,date:new Date().toISOString(),structure:tx("sx-p1").slice(0,120),fonction:val("p2"),exp:val("p3"),sexe:val("p4"),prof:val("prof"),g:GL.map((_,i)=>val("g"+i)),d:DL.map((_,i)=>val("d"+i)),t:TL.map((_,i)=>val("t"+i)),l:ben?LL.map((_,i)=>val("l"+i)):[],r:ben?RL.map((_,i)=>val("r"+i)):[],a:ben?[tx("sx-a1"),tx("sx-a2")]:[],b:ben?[...document.querySelectorAll("input[name=b]:checked")].map(x=>+x.value):[],bo:ben?tx("sx-bo"):"",o:OL.map((_,i)=>tx("sx-o"+i)),s:val("s")};
+  obw(obx().concat([{t,rec}]));try{localStorage.removeItem(DK)}catch(e){}
+  app.innerHTML=nav()+`<div class="card res"><div class="big" style="font-size:2rem">Merci !</div><p>Votre avis a bien été pris en compte. Il nous aidera à améliorer le coaching et les ateliers 2 et 3.</p><p class="mu" id="sv" aria-live="polite">Enregistrement en cours…</p><p id="svb"></p><p><button class="sec" onclick="location.hash=''">Retour à l’accueil</button></p></div>`;saveStatus(t,rec)}}
+function satRes(){const n=srows.length,H=`<h2 id="sat">Satisfaction de l’atelier</h2>`;
+ if(!n)return H+`<div class="card"><p class="mu" style="margin:0">Aucune réponse au questionnaire de satisfaction pour le moment.</p></div>`;
+ const nn=a=>a.filter(x=>x!=null),pos=a=>a.filter(x=>x>0),avg=a=>a.length?a.reduce((s,x)=>s+x,0)/a.length:null,f1=x=>x==null?"–":String(Math.round(x*10)/10).replace(".",","),pct=(k,m)=>m?Math.round(k/m*100)+" %":"–",wr='style="white-space:normal;min-width:240px"',
+ col=(f,i)=>srows.map(r=>(r[f]||[])[i]),bar=p=>`<div class="bw"><i style="width:${p}%"></i></div>`,tb=(hd,rs)=>`<div class="card tw"><table><tr>${hd.map(x=>`<th>${x}</th>`).join("")}</tr>${rs}</table></div>`,
+ dist=(a,o)=>o.map(x=>`<td>${pct(a.filter(v=>v===x[0]).length,a.length)}</td>`).join(""),
+ items=[...GL.map((x,i)=>["G"+(i+1),x,pos(col("g",i))]),...DL.map((x,i)=>["D"+(i+1),x,pos(col("d",i))])],sn=nn(srows.map(r=>r.s)),all=items.flatMap(x=>x[2]),
+ low=items.filter(x=>x[2].length).map(x=>[x,avg(x[2])]).sort((a,b)=>a[1]-b[1]).slice(0,3),B=srows.filter(r=>r.prof!==2),cb=(f,i)=>B.map(r=>(r[f]||[])[i]).filter(x=>x!=null),
+ cnt=(f,L)=>L.map((x,i)=>x+" : "+srows.filter(r=>r[f]===i).length).join(" · ");
+ let h=H+`<div class="grid"><div class="card"><div class="mu">Réponses</div><div class="big">${n}</div><div class="mu">questionnaires reçus</div></div><div class="card"><div class="mu">Note globale (S1)</div><div class="big">${f1(avg(sn))}<small> / 10</small></div><div class="mu">moyenne</div></div><div class="card"><div class="mu">Taux de satisfaction</div><div class="big">${pct(all.filter(x=>x>=4).length,all.length)}</div><div class="mu">« satisfait » ou « très satisfait » (G et D)</div></div></div>`;
+ h+=`<div class="card"><b>Priorités d’amélioration</b> <span class="mu">(3 critères les moins bien notés)</span>${low.map(([x,m])=>`<div class="op"><b>${x[0]}</b> ${x[1]} <span class="mu">· ${f1(m)} / 5</span></div>`).join("")}</div>`;
+ h+=`<p class="sg">Appréciation par critère (5 = très satisfait)</p>`+tb(["","Critère","Moyenne /5","Satisfaits","Répondants",""],items.map(x=>{const m=avg(x[2]);return `<tr><td><b>${x[0]}</b></td><td ${wr}>${x[1]}</td><td><b>${f1(m)}</b></td><td>${pct(x[2].filter(v=>v>=4).length,x[2].length)}</td><td>${x[2].length}</td><td>${bar(m==null?0:m/5*100)}</td></tr>`}).join(""));
+ h+=`<p class="sg">Temps consacré à chaque volet</p>`+tb(["Volet","Insuffisant","Adapté","Excessif"],TL.map((x,i)=>`<tr><td ${wr}>${x}</td>${dist(nn(col("t",i)),SATT)}</tr>`).join(""));
+ h+=`<p class="sg">Atteinte des résultats : ${B.length} entreprise(s) bénéficiaire(s), ${n-B.length} agent(s)</p>`+tb(["Livrable","Version initiale","À compléter","Non démarré"],LL.map((x,i)=>`<tr><td ${wr}>${x}</td>${dist(cb("l",i),SATL)}</tr>`).join(""))+tb(["Affirmation","D’accord","Moyenne /4"],RL.map((x,i)=>{const a=cb("r",i);return `<tr><td ${wr}><b>R${i+1}</b> ${x}</td><td>${pct(a.filter(v=>v>=3).length,a.length)}</td><td>${f1(avg(a))}</td></tr>`}).join(""));
+ h+=`<p class="sg">Appuis attendus pendant le coaching</p>`+tb(["Besoin","Citations",""],BL.map((x,i)=>[x,B.filter(r=>(r.b||[]).includes(i)).length]).sort((a,b)=>b[1]-a[1]).map(([x,k])=>`<tr><td ${wr}>${x}</td><td>${k}</td><td>${bar(B.length?k/B.length*100:0)}</td></tr>`).join(""));
+ h+=`<p class="sg">Profil des répondants</p><div class="card"><p class="mu" style="margin:0 0 6px">Fonction — ${cnt("fonction",PF)}</p><p class="mu" style="margin:0 0 6px">Expérience export — ${cnt("exp",PE)}</p><p class="mu" style="margin:0">Répartition — ${cnt("sexe",PX)}</p></div>`;
+ const op=[["A1 – Principaux acquis",r=>r.a||[]],["4.4 – Autre appui attendu",r=>[r.bo]],...OL.map((x,i)=>["O"+(i+1)+" – "+x,r=>[(r.o||[])[i]]])];
+ h+=`<p class="sg">Réponses libres</p>`+op.map(([ti,f])=>{const a=srows.flatMap(f).filter(x=>x&&x.trim());return `<details class="card"><summary><b>${esc(ti)}</b> <span class="mu">(${a.length})</span></summary>${a.map(x=>`<div class="op">${esc(x)}</div>`).join("")||'<p class="mu">Aucune réponse.</p>'}</details>`}).join("")+`<p><button class="sec" onclick="csv('sat')">Exporter la satisfaction (CSV)</button></p>`;return h}
+function satCsv(){const q=v=>`"${String(v??"").replace(/"/g,'""')}"`,c=(p,a)=>a.map((_,i)=>p+(i+1)),H=["Date","Structure","Fonction","Expérience export","Sexe","Profil",...c("G",GL),...c("D",DL),...c("T",TL),...c("L",LL),...c("R",RL),"A1a","A1b","Appuis attendus","Autre appui",...c("O",OL),"Note globale S1"];
+ return [H.join(";")].concat(srows.map(r=>{const z=(f,k)=>Array.from({length:k},(_,i)=>(r[f]||[])[i]);return [r.date,r.structure,PF[r.fonction],PE[r.exp],PX[r.sexe],r.prof===2?"Agent":"Bénéficiaire",...z("g",4),...z("d",21),...z("t",4),...z("l",4),...z("r",8),(r.a||[])[0],(r.a||[])[1],(r.b||[]).map(i=>BL[i]).join(" | "),r.bo,...OL.map((_,i)=>(r.o||[])[i]),r.s].map(q).join(";")}))}
+let bt="entree";
+function bareme(){const tab=t=>`<button class="${bt===t?"on":""}" onclick="setBt('${t}')">${Q[t].titre}<small id="tb-${t}"></small></button>`;
+ let h=nav()+`<h1>Barème et bonnes réponses</h1><p class="lead">Choisissez la bonne réponse de chaque question et son nombre de points. Ces réglages s’appliquent aux prochaines réponses ; les réponses déjà enregistrées gardent leur score.</p><div class="seg">${tab("entree")}${tab("sortie")}</div>`;
+ ["entree","sortie"].forEach(t=>{h+=`<div id="bp-${t}" ${bt===t?"":"hidden"}><div class="jump">${Q[t].sec.map((s,k)=>`<button class="sec" onclick="document.getElementById('s-${t}-${k}').scrollIntoView({behavior:'smooth'})">Partie ${s[1].slice(0,1)}</button>`).join("")}</div>`+Q[t].q.map((q,i)=>`${(k=>k<0?"":`<div class="sh" id="s-${t}-${k}"><h2>${esc(Q[t].sec[k][1])}</h2><span class="mu" id="st-${t}-${k}"></span></div>`)(Q[t].sec.findIndex(s=>s[0]===i))}<div class="card bq"><div class="bqh"><span class="qn">${i+1}</span><b>${q[0]}</b><label class="pts">Points<input class="num" type="number" min="0" max="100" step="0.5" data-t="${t}" value="${PTS[t][i]}" oninput="tot()"></label></div><div class="chs">${q[1].map((o,j)=>`<label class="o"><input type="radio" name="k-${t}-${i}" value="${LET[j]}"${KEY[t][i]===LET[j]?" checked":""}><i class="lt">${LET[j]}</i><span>${esc(o)}</span></label>`).join("")}</div></div>`).join("")+`</div>`});
+ h+=`<div class="card"><h2 style="margin-top:0">Note finale</h2><p class="mu">Pondération de la note finale (sur 20). Exemple : 0 / 100 = note de sortie seule ; 40 / 60 = moyenne pondérée.</p>
+ <div class="row"><span>Poids du score d’entrée (%)</span><input class="num" type="number" min="0" max="100" id="we" value="${W.entree}" oninput="tot()"></div>
+ <div class="row"><span>Poids du score de sortie (%)</span><input class="num" type="number" min="0" max="100" id="ws" value="${W.sortie}" oninput="tot()"></div><p id="wt" class="mu" style="margin-bottom:0"></p></div>
+ <div class="sb"><div><b id="sbt"></b><div class="mu" id="bm"></div></div><button onclick="saveB()">Enregistrer</button></div>`;app.innerHTML=h;tot()}
+function setBt(t){bt=t;["entree","sortie"].forEach((x,k)=>{$("#bp-"+x).hidden=x!==t;document.querySelectorAll(".seg button")[k].classList.toggle("on",x===t)});tot();scrollTo(0,0)}
+const tot=()=>{["entree","sortie"].forEach(t=>{const I=[...document.querySelectorAll(`input[data-t=${t}]`)],v=r2(I.reduce((s,x)=>s+(+x.value||0),0));Q[t].sec.forEach((s,k)=>{const e=Q[t].sec[k+1]?Q[t].sec[k+1][0]:20;$("#st-"+t+"-"+k).textContent=r2(I.slice(s[0],e).reduce((a,x)=>a+(+x.value||0),0))+" points"});$("#tb-"+t).textContent=v+" points";if(t===bt)$("#sbt").textContent="Total : "+v+" points"});const w=(+$("#we").value||0)+(+$("#ws").value||0);$("#wt").textContent="Total des pondérations : "+w+" %"+(w===100?"":" (à ajuster pour atteindre 100 %)")};
+async function saveB(){const n={};
+ ["entree","sortie"].forEach(t=>n[t]=[...document.querySelectorAll(`input[data-t=${t}]`)].map(x=>Math.min(100,Math.max(0,+x.value||0))));
+ n.w={entree:Math.max(0,+$("#we").value||0),sortie:Math.max(0,+$("#ws").value||0)};
+ n.key={};["entree","sortie"].forEach(t=>n.key[t]=Q[t].q.map((_,i)=>{const c=document.querySelector(`input[name="k-${t}-${i}"]:checked`);return c?c.value:KEY[t][i]}).join(""));
+ try{await db.collection("config").doc("points").set(n);["entree","sortie"].forEach(t=>{PTS[t]=n[t];KEY[t]=n.key[t]});W=n.w;$("#bm").textContent="Enregistré."}catch(e){$("#bm").textContent="Enregistrement impossible : "+e.message}}
+/* ===== Déploiement (tout est dans ce fichier : le serveur Node s'extrait d'ici) ===== */
+const RULES=`rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function admin() { return request.auth != null && request.auth.token.firebase.sign_in_provider != 'anonymous'; }
+    match /{col}/{id} {
+      allow create: if col in ['entree','sortie','satisfaction'] && request.auth != null && request.auth.uid == id;
+      allow read, update, delete: if admin();
+    }
+    match /config/{doc} {
+      allow read: if request.auth != null;
+      allow write: if admin();
+    }
+  }
+}`;
+function dlSrv(){const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([document.getElementById("srvsrc").textContent.replace(/^\n/,"")],{type:"text/javascript"}));a.download="server.js";a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000)}
+function depCard(){const ok=m=>`<p style="margin:0;color:var(--ac);font-weight:700">✔ ${m}</p>`,
+ st=SRV?ok("Mode serveur : réponses centralisées, plusieurs utilisateurs en même temps."):FB?ok("Mode Firebase : réponses centralisées, plusieurs utilisateurs en même temps."):typeof claude!=="undefined"?ok("Mode Claude : réponses centralisées."):`<p class="err" style="margin:0">⚠ Mode local : chaque appareil garde ses propres réponses, rien n’est partagé avec l’administrateur. Pour un usage à plusieurs, choisissez l’option A ou B ci-dessous.</p>`;
+ return `<div class="card"><h2 style="margin-top:0">Déploiement</h2>${st}<details style="margin-top:12px"><summary><b>Option A : serveur Node (le plus simple)</b></summary><ol class="mu"><li>Téléchargez <b>server.js</b> (il est contenu dans ce fichier).</li><li>Placez server.js et ce fichier, renommé <b>index.html</b>, dans le même dossier du serveur (Node 18 ou plus).</li><li>Lancez : <code>ADMIN_PW="votre-mot-de-passe" PORT=3000 node server.js</code></li><li>Ouvrez l’adresse du serveur : le mode serveur s’active tout seul. Mettez-le derrière HTTPS. Les données sont dans le dossier <b>data</b> (à sauvegarder).</li></ol><button class="sec" onclick="dlSrv()">Télécharger server.js</button></details>
+<details style="margin-top:10px"><summary><b>Option B : Firebase (sans serveur à gérer)</b></summary><ol class="mu"><li>Créez un projet Firebase, activez <b>Authentication</b> (méthodes « Anonyme » et « E-mail/Mot de passe », puis créez le compte administrateur) et <b>Firestore</b>.</li><li>Collez les règles ci-dessous dans Firestore &gt; Règles.</li><li>Collez la configuration du projet dans la ligne <b>FIREBASE_CONFIG</b> de ce fichier, puis hébergez-le.</li></ol><textarea readonly rows="9" style="font:.8rem/1.4 ui-monospace,monospace" onclick="this.select()">${esc(RULES)}</textarea></details></div>`}
+const url=t=>BASE.replace(/#.*$/,"")+"#"+t,mkqr=(t,o)=>{const q=qrcode(0,"M");q.addData(url(t));q.make();return q.createSvgTag(o)};
+function acces(){let h=nav()+`<h1>Formulaires et QR codes</h1>${depCard()}<div class="card"><label class="mu">Lien public de la page (modifiable)<input type="text" id="base" value="${esc(BASE)}" oninput="BASE=this.value.trim();qrs()"></label>
+ <p class="mu">${SRV?"Les réponses sont centralisées sur le serveur : ce lien est celui à diffuser aux participants.":STANDALONE?(FB?"Les réponses sont centralisées dans Firebase : hébergez ce fichier à une adresse publique avant de diffuser les QR codes.":"Hébergez ce fichier à une adresse publique avant de diffuser les QR codes. Sans serveur, les réponses restent enregistrées dans le navigateur de chaque appareil. Pour de nombreux participants, renseignez FIREBASE_CONFIG."):"Les participants doivent pouvoir ouvrir ce lien : partagez la page depuis claude.ai avant de diffuser les QR codes."}</p></div><div class="grid">`;
+ ["entree","sortie","satisfaction"].forEach(t=>{h+=`<div class="card"><h2 style="margin-top:0">${Q[t].titre}</h2><label class="row"><input type="checkbox" ${OPEN[t]?"checked":""} onchange="setOpen('${t}',this.checked)"><span>${OPEN[t]?"Formulaire ouvert aux participants":"Formulaire fermé"}</span></label>
+ <div class="qr" id="qr-${t}"></div><p class="mu" style="margin:12px 0 4px">Lien d’accès direct</p><a id="lk-${t}" class="lk" target="_blank" rel="noopener"></a><div class="act"><a class="btn" id="op-${t}" target="_blank" rel="noopener">Ouvrir le formulaire</a><button class="sec" onclick="cp('${t}',this)">Copier le lien</button><button class="sec" onclick="dlqr('${t}')">Télécharger le QR code</button></div></div>`});
+ app.innerHTML=h+`</div>`;qrs()}
+function qrs(){["entree","sortie","satisfaction"].forEach(t=>{try{$("#qr-"+t).innerHTML=mkqr(t,{cellSize:4,margin:2,scalable:true})}catch(e){$("#qr-"+t).textContent="QR indisponible"}$("#lk-"+t).textContent=url(t);$("#lk-"+t).href=url(t);$("#op-"+t).href=url(t)})}
+async function cp(t,b){const u=url(t);try{await navigator.clipboard.writeText(u)}catch(e){const i=document.createElement("textarea");i.value=u;document.body.appendChild(i);i.select();try{document.execCommand("copy")}catch(_){}i.remove()}const o=b.textContent;b.textContent="Lien copié ✓";setTimeout(()=>b.textContent=o,1800)}
+async function dlqr(t){try{const d=await RT().use("downloads");await d.save({filename:"qr-"+t+".svg",data:mkqr(t,{cellSize:8,margin:4})})}catch(e){alert("Téléchargement impossible.")}}
+async function setOpen(t,v){OPEN[t]=v;try{await db.collection("config").doc("etat").set(OPEN)}catch(e){OPEN[t]=!v;alert("Enregistrement impossible.")}acces()}
+async function csv(k){const q=v=>`"${String(v??"").replace(/"/g,'""')}"`;let L;
+ if(k==="suivi")L=["Nom;Entreprise;Score entrée;Score sortie;Progression /20;Note finale /20;Appréciation"].concat(suivi().map(p=>[p.nom,p.ent,sc(p.e),sc(p.s),prog(p),p.f??"",p.f==null?"":interp(p.f)].map(q).join(";")));
+ else if(k==="sat")L=satCsv();else L=["Date;Nom;Entreprise;Type;Score;Sur;Durée (s);Niveau;Réponses"].concat(rows.map(r=>[r.date,r.nom,r.entreprise,r.type,r.score,r.max||20,r.duree??"",interp(r.score,r.max||20),r.reponses].map(q).join(";")));
+ try{const d=await RT().use("downloads");await d.save({filename:"resultats-"+k+".csv",data:"\ufeff"+L.join("\n")})}catch(e){}}
+</script></body></html>

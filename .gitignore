@@ -1,0 +1,10 @@
+# Uploaded files
+uploads/
+node_modules/
+node_modules
+dist/
+**/serviceAccountKey.json
+config/
+.env
+postgresdata
+logs/

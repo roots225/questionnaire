@@ -1,0 +1,15 @@
+services:
+  questionnaire:
+    build: .
+    container_name: questionnaire-server
+    restart: unless-stopped
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - PORT=3000
+      - ADMIN_PW=${ADMIN_PW:-admin2026}
+      - DATA_DIR=/app/data
+      - TRUST_PROXY=${TRUST_PROXY:-0}
+    volumes:
+      - ./data:/app/data
+
